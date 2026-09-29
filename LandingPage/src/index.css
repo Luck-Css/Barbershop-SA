@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  /*========================
+        --Cores Principais-- 
+    ========================*/
+
+  /* Verde Esmeralda (Fundo Principal)*/
+  --color-bg-primary: #0e221b;
+  /* Verde Floresta (Cards, Containers, Cabeçalho)*/
+  --color-bg-secondary: #142e25;
+
+  /*========================
+        --Cores Destaques-- 
+    ========================*/
+
+  /* Dourado Antigo (CTAs principais, Bordas)*/
+  --color-gold-primary: #c5a059;
+  /* Dourado Claro (Hover botões, Destaques Texto)*/
+  --color-gold-hover: #dfba73;
+  /* Bronze / Ambar (Detalhes secundários)*/
+  --color-bronze: #8c6d37;
+
+  /*===============================
+        --Tipografia, Superficies -- 
+    =================================*/
+
+  /* Creme (Texto Principal)*/
+  --color-text-primary: #f4efe6;
+  /* Dourado palha (Subtitulos, Rotulos)*/
+  --color-text-secondary: #d1c2a5;
+  /* Verde Acinzentado (Texto desabilitado / Infos)*/
+  --color-text-muted: #7f998d;
+
+  /*========================
+        --Bordas, Divisores-- 
+    ========================*/
+
+  /* Borda Dourada So Fresh So Clean (Transparencia)*/
+  --color-border-gold: rgba(197, 160, 89, 0.3);
+  /* Borda Forte Dourada (Cards em destaque)*/
+  --color-border-gold-solid: #c5a059;
+
+  /*========================
+        --Sombras, Gradientes-- 
+    ========================*/
+  /* Gradiente Dourado (Botões Agendamento ??)*/
+  --gradient-gold: linear-gradient(135deg, #c5a059 0%, #a3803d 100%);
+  /* Sombra suave Dourada (Usar no Hover)*/
+  --shadow-gold-glow: 0 4px 20px rgba(197, 160, 89, 0.25);
+  /* Sombra profunda (Cards)*/
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: var(--color-text-primary);
+    
+}
