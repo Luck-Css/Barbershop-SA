@@ -1,7 +1,15 @@
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
 
-:root {
-  /*========================
+@font-face {
+    font-family: "typoslab";
+    src: url(/public/Fonts/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf);
+}
+
+@theme{
+    --font-typoslab: "typoslab", sans-serif;
+
+      /*========================
         --Cores Principais-- 
     ========================*/
 
@@ -50,6 +58,8 @@
   --shadow-gold-glow: 0 4px 20px rgba(197, 160, 89, 0.25);
   /* Sombra profunda (Cards)*/
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+
 }
 
 body {
