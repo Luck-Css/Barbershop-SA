@@ -3,11 +3,27 @@
 
 @font-face {
     font-family: "typoslab";
-    src: url(/public/Fonts/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf);
+    src: url(/Fonts/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf);
+
+}
+@font-face {
+    font-family: "larian";
+    src: url(/Fonts/Larian/BigLarianCustoms_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+  font-family: "bremlin";
+  src: url(/Fonts/Bremlin/Bremlin.otf);
+}
+@font-face {
+  font-family: "milesdane";
+  src: url(/Fonts/Milesdane/Milesdane\ Trial.otf);
 }
 
 @theme{
-    --font-typoslab: "typoslab", sans-serif;
+    --font-sans: "typoslab", sans-serif;
+    --font-larian: "larian", sans-serif;
+    --font-bremlin: "bremlin", sans-serif;
+    --font-milesdane: "milesdane", sans-serif;
 
       /*========================
         --Cores Principais-- 

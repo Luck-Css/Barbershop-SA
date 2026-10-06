@@ -2,7 +2,7 @@ import { BsFillSuitSpadeFill } from "react-icons/bs";
 
 export default function Navbar() {
   return (
-    <section className="font-typoslab items-center ml-10 mr-10 text-text-primary">
+    <section className="items-center ml-10 mr-10 text-text-primary">
       <div className="flex items-center justify-between mt-10 bg-bg-secondary rounded-sm p-4">
         <a href="" className="flex items-center ml-2 font-medium gap-2 text-gold-primary hover:motion-preset-wobble  ">
           <BsFillSuitSpadeFill size={15}/>
