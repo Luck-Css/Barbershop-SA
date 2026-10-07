@@ -2,13 +2,12 @@
 @plugin "tailwindcss-motion";
 
 @font-face {
-    font-family: "typoslab";
-    src: url(/Fonts/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf);
-
+  font-family: "typoslab";
+  src: url(/Fonts/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf);
 }
 @font-face {
-    font-family: "larian";
-    src: url(/Fonts/Larian/BigLarianCustoms_PERSONAL_USE_ONLY.otf);
+  font-family: "larian";
+  src: url(/Fonts/Larian/BigLarianCustoms_PERSONAL_USE_ONLY.otf);
 }
 @font-face {
   font-family: "bremlin";
@@ -19,66 +18,126 @@
   src: url(/Fonts/Milesdane/Milesdane\ Trial.otf);
 }
 
-@theme{
-    --font-sans: "typoslab", sans-serif;
-    --font-larian: "larian", sans-serif;
-    --font-bremlin: "bremlin", sans-serif;
-    --font-milesdane: "milesdane", sans-serif;
+@theme {
 
-      /*========================
-        --Cores Principais-- 
-    ========================*/
+  /* FONTES */
+  --font-sans: "typoslab", sans-serif;
+  --font-larian: "larian", sans-serif;
+  --font-bremlin: "bremlin", sans-serif;
+  --font-milesdane: "milesdane", sans-serif;
 
-  /* Verde Esmeralda (Fundo Principal)*/
+  /* BACKGROUND PRINCIPAL (ESMERALDA) */
   --color-bg-primary: #0e221b;
-  /* Verde Floresta (Cards, Containers, Cabeçalho)*/
+
+  --color-BG-pr-50: oklch(97.9% 0.012 162.506);
+  --color-BG-pr-100: oklch(94.7% 0.03 159.444);
+  --color-BG-pr-200: oklch(89.9% 0.054 160.543);
+  --color-BG-pr-300: oklch(83.6% 0.083 161.371);
+  --color-BG-pr-400: oklch(75.3% 0.103 159.616);
+  --color-BG-pr-500: oklch(68.1% 0.099 158.873);
+  --color-BG-pr-600: oklch(57.8% 0.084 159.618);
+  --color-BG-pr-700: oklch(48.7% 0.069 162.005);
+  --color-BG-pr-800: oklch(40.8% 0.055 163.306);
+  --color-BG-pr-900: oklch(35.1% 0.045 165.333);
+  --color-BG-pr-950: oklch(23.2% 0.03 168.945);
+
+  /* BACKGROUND SECUNDÁRIO (FLORESTA) */
   --color-bg-secondary: #142e25;
 
-  /*========================
-        --Cores Destaques-- 
-    ========================*/
+  --color-BG-sr-50: oklch(97.9% 0.015 162.514);
+  --color-BG-sr-100: oklch(95.2% 0.037 159.452);
+  --color-BG-sr-200: oklch(90.8% 0.067 160.551);
+  --color-BG-sr-300: oklch(85% 0.103 161.379);
+  --color-BG-sr-400: oklch(77.1% 0.127 159.624);
+  --color-BG-sr-500: oklch(70.4% 0.122 158.881);
+  --color-BG-sr-600: oklch(60.5% 0.104 159.626);
+  --color-BG-sr-700: oklch(51.9% 0.085 162.013);
+  --color-BG-sr-800: oklch(44.4% 0.068 163.314);
+  --color-BG-sr-900: oklch(39.2% 0.055 165.341);
+  --color-BG-sr-950: oklch(27.7% 0.037 168.953);
 
-  /* Dourado Antigo (CTAs principais, Bordas)*/
+  /* DOURADO ANTIGO (CTAs principais, Bordas)*/
   --color-gold-primary: #c5a059;
-  /* Dourado Claro (Hover botões, Destaques Texto)*/
+  
+  --color-Gold-50: oklch(98.7% 0.016 108.727);
+  --color-Gold-100: oklch(98% 0.044 109.708);
+  --color-Gold-200: oklch(96% 0.079 108.055);
+  --color-Gold-300: oklch(92.7% 0.112 104.626);
+  --color-Gold-400: oklch(88.1% 0.123 98.451);
+  --color-Gold-500: oklch(83.1% 0.113 92.562);
+  --color-Gold-600: oklch(72.5% 0.1 82.349);
+  --color-Gold-700: oklch(58.7% 0.083 72.957);
+  --color-Gold-800: oklch(49.8% 0.07 68.422);
+  --color-Gold-900: oklch(43.2% 0.059 64.223);
+  --color-Gold-950: oklch(28.6% 0.041 60.328);
+
+  /* DOURADO CLARO (Hover botões, Destaques Texto)*/
   --color-gold-hover: #dfba73;
-  /* Bronze / Ambar (Detalhes secundários)*/
+
+  --color-Gold-hover-50: oklch(98% 0.012 90.18);
+  --color-Gold-hover-100: oklch(94.4% 0.029 91.66);
+  --color-Gold-hover-200: oklch(88% 0.059 87.193);
+  --color-Gold-hover-300: oklch(80.6% 0.099 82.786);
+  --color-Gold-hover-400: oklch(72.3% 0.142 72.43);
+  --color-Gold-hover-500: oklch(68.3% 0.165 64.1);
+  --color-Gold-hover-600: oklch(62.8% 0.172 57.612);
+  --color-Gold-hover-700: oklch(54% 0.151 54.898);
+  --color-Gold-hover-800: oklch(46.1% 0.122 53.8);
+  --color-Gold-hover-900: oklch(40.4% 0.095 54.668);
+  --color-Gold-hover-950: oklch(26.6% 0.061 52.755);
+  
+  /* BRONZE / AMBAR (Detalhes secundários)*/
   --color-bronze: #8c6d37;
 
-  /*===============================
-        --Tipografia, Superficies -- 
-    =================================*/
+
+  /* TEXTOS */
 
   /* Creme (Texto Principal)*/
   --color-text-primary: #f4efe6;
+
+  --color-Text-pr-50: oklch(98.8% 0 0);
+  --color-Text-pr-100: oklch(95.4% 0.013 82.402);
+  --color-Text-pr-200: oklch(91.9% 0.012 82.402);
+  --color-Text-pr-300: oklch(87% 0.01 82.502);
+  --color-Text-pr-400: oklch(72.9% 0.009 82.802);
+  --color-Text-pr-500: oklch(57.3% 0.007 83.202);
+  --color-Text-pr-600: oklch(46% 0.006 83.202);
+  --color-Text-pr-700: oklch(39% 0.004 83.302);
+  --color-Text-pr-800: oklch(28.3% 0.003 83.302);
+  --color-Text-pr-900: oklch(22.7% 0.001 83.302);
+  --color-Text-pr-950: oklch(15.3% 0 0);
+
   /* Dourado palha (Subtitulos, Rotulos)*/
   --color-text-secondary: #d1c2a5;
+
   /* Verde Acinzentado (Texto desabilitado / Infos)*/
   --color-text-muted: #7f998d;
 
-  /*========================
-        --Bordas, Divisores-- 
-    ========================*/
+  
+  /* BORDAS */
 
   /* Borda Dourada So Fresh So Clean (Transparencia)*/
   --color-border-gold: rgba(197, 160, 89, 0.3);
+
   /* Borda Forte Dourada (Cards em destaque)*/
   --color-border-gold-solid: #c5a059;
 
-  /*========================
-        --Sombras, Gradientes-- 
-    ========================*/
+  
+  /* SOMBRAS*/
+
   /* Gradiente Dourado (Botões Agendamento ??)*/
   --gradient-gold: linear-gradient(135deg, #c5a059 0%, #a3803d 100%);
+
   /* Sombra suave Dourada (Usar no Hover)*/
   --shadow-gold-glow: 0 4px 20px rgba(197, 160, 89, 0.25);
+  
   /* Sombra profunda (Cards)*/
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.4);
 
 
 }
 
+
 body {
-    background-color: var(--color-text-primary);
-    
+  background-color: var(--color-text-primary);
 }
